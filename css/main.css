@@ -1,0 +1,53 @@
+h1 {
+    color: #54320d;
+}
+
+.magic {
+    transition: transform 4s ease;
+    transform-origin: 100px 100px;
+}
+.rect:hover .magic {
+    transform: rotate(2turn) scale(1.6);
+}
+
+g {
+    transition: transform 2s ease;
+    transform-origin: 100px 100px;
+}
+
+.diceFive:hover .points{
+    transform: scale(1.6) rotate(2turn) translate(20px);
+}
+
+text {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;}
+
+.cls-1{
+    fill:#1a8d0d;
+}
+.cls-2{
+    fill:#fff;
+}
+.cls-3{
+    fill:#195220;
+}
+
+@keyframes move{
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(12px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.pupil {
+    animation: move 1s infinite;
+}
+
+.smile-wrap:hover .pupil {
+    animation-play-state: paused;
+}
